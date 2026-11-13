@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>HCIN POE Submission – StudySync</title>
+<style>
+  @page { size: A4; margin: 16mm 15mm 16mm 15mm; }
+  body { font-family: "Segoe UI", Arial, sans-serif; font-size: 10.5pt; line-height: 1.42; color: #1f2937; margin: 0; }
+  h1 { font-size: 20pt; color: #1e40af; margin: 0 0 4pt; }
+  h2 { font-size: 14pt; color: #1e40af; border-bottom: 2px solid #1e40af; padding-bottom: 2pt; margin: 13pt 0 6pt; break-after: avoid; }
+  h3 { font-size: 11.5pt; color: #0f766e; margin: 9pt 0 3pt; break-after: avoid; }
+  p { margin: 0 0 6pt; }
+  .cover { text-align: center; padding-top: 50mm; break-after: page; }
+  .cover h1 { font-size: 30pt; }
+  .cover .sub { font-size: 14pt; color: #0f766e; margin-bottom: 30pt; }
+  .cover .who { font-size: 12pt; line-height: 1.9; }
+  .toc { break-after: page; }
+  .toc ol { line-height: 1.85; font-size: 11pt; }
+  figure { margin: 5pt 0 9pt; break-inside: avoid; }
+  figure img { width: 100%; border: 1px solid #cbd5e1; border-radius: 4px; display: block; }
+  figcaption { font-size: 8.5pt; color: #4b5563; margin-top: 2pt; }
+  .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 8pt; break-inside: avoid; margin: 5pt 0 9pt; }
+  .pair figure { margin: 0; }
+  .pair.three { grid-template-columns: 1fr 1fr 1fr; }
+  .single { width: 62%; margin-left: auto; margin-right: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 9.5pt; margin: 5pt 0 9pt; }
+  th, td { border: 1px solid #cbd5e1; padding: 3.5pt 6pt; vertical-align: top; text-align: left; }
+  th { background: #e8efff; }
+  tr { break-inside: avoid; }
+  ul { margin: 2pt 0 6pt 16pt; padding: 0; }
+  li { margin-bottom: 2pt; }
+  .new { display: inline-block; background: #dcf5f1; color: #0b524c; border-radius: 8pt; padding: 0 5pt; font-size: 8pt; font-weight: 700; vertical-align: 1pt; }
+  .note { background: #f1f5f9; border-left: 4px solid #1e40af; padding: 5pt 8pt; margin: 6pt 0 10pt; font-size: 9.5pt; }
+  .refs p { padding-left: 18pt; text-indent: -18pt; font-size: 9.5pt; }
+  code { font-size: 9pt; }
+
+  .cover2 { break-after: page; height: 255mm; display: flex; flex-direction: column; justify-content: space-between; text-align: center; }
+  .cover2 .band { background: linear-gradient(120deg,#1e40af,#0f766e); color:#fff; border-radius: 8pt; padding: 26pt 18pt; margin-top: 30mm; }
+  .cover2 .band h1 { color:#fff; font-size: 30pt; margin: 0 0 6pt; }
+  .cover2 .band p { color:#e8f0ff; font-size: 14pt; margin: 0; }
+  .cover2 .logo { width: 54pt; height: 54pt; border-radius: 12pt; background:#fff; color:#1e40af; font-size: 30pt; font-weight: 700; display:inline-grid; place-items:center; margin-bottom: 12pt; }
+  .cover2 table.meta { width: 75%; margin: 0 auto; font-size: 11.5pt; }
+  .cover2 table.meta td { border: 0; border-bottom: 1px solid #cbd5e1; padding: 6pt 4pt; }
+  .cover2 table.meta td:first-child { font-weight: 700; color:#1e40af; width: 40%; }
+  .cover2 .foot { font-size: 9pt; color:#6b7280; margin-bottom: 6mm; }
+  .links { break-after: page; }
+  .linkbox { border: 2px solid #1e40af; border-radius: 8pt; padding: 10pt 12pt; margin: 8pt 0 12pt; }
+  .linkbox h3 { margin-top: 0; }
+  .linkbox a { font-size: 12pt; font-weight: 700; color: #1d4ed8; word-break: break-all; }
+</style>
+</head>
+<body>
+
+
+<section class="cover2">
+  <div class="band"><div class="logo">S</div><h1>StudySync</h1><p>HCIN – Portfolio of Evidence (POE)<br>Final Prototype and Updated Research Report</p></div>
+  <table class="meta">
+    <tr><td>Student name</td><td>Kgosi Atticus Mzuzwana</td></tr>
+    <tr><td>Student number</td><td>ST10495062</td></tr>
+    <tr><td>Module</td><td>HCIN – Human-Computer Interaction</td></tr>
+    <tr><td>Assessment</td><td>POE – Prototype (100 marks, 35%)</td></tr>
+    <tr><td>Learning units</td><td>LU1 – LU4</td></tr>
+    <tr><td>Date submitted</td><td>13 November 2026</td></tr>
+  </table>
+  <div class="foot">Prototype: https://github.com/AtticusM-Main/studysync-hcin-poe</div>
+</section>
+<section class="links">
+  <h2>Submission links</h2>
+  <p>The updated prototype is published on GitHub. Both links are public and need no login.</p>
+  <div class="linkbox"><h3>1. Live prototype (runs in the browser)</h3><a href="https://atticusm-main.github.io/studysync-hcin-poe/">https://atticusm-main.github.io/studysync-hcin-poe/</a>
+    <p class="meta" style="margin:4pt 0 0">Opens the StudySync dashboard. Use the top navigation to visit Study Groups, Resources and Profile; open a group to see chat, whiteboard, discussion and shared notes.</p></div>
+  <div class="linkbox"><h3>2. GitHub repository (source code)</h3><a href="https://github.com/AtticusM-Main/studysync-hcin-poe">https://github.com/AtticusM-Main/studysync-hcin-poe</a>
+    <p class="meta" style="margin:4pt 0 0">Contains all HTML, CSS and JavaScript files, the screenshots used as evidence, and this report.</p></div>
+  <h3>Running the prototype offline</h3>
+  <ol><li>On the repository page, choose <b>Code → Download ZIP</b> and extract it.</li><li>Open <code>index.html</code> in any modern browser (Chrome, Edge, Firefox). No installation or server is required.</li></ol>
+  <h3>Repository contents</h3>
+  <table>
+    <tr><th style="width:38%">File / folder</th><th>Contents</th></tr>
+    <tr><td><code>index.html</code></td><td>Dashboard – greeting, getting-started guide, focus timer, weekly goal, deadlines</td></tr>
+    <tr><td><code>groups.html</code></td><td>Study groups – search with suggestions, Quick Join, create a group</td></tr>
+    <tr><td><code>group.html</code></td><td>Group workspace – chat with reactions, whiteboard, discussion, shared notes, calendar</td></tr>
+    <tr><td><code>resources.html</code></td><td>Resource library – filter, rate, report, upload</td></tr>
+    <tr><td><code>profile.html</code></td><td>Profile – modules, reputation, study friends</td></tr>
+    <tr><td><code>assets/</code></td><td><code>styles.css</code> and <code>app.js</code></td></tr>
+    <tr><td><code>screens/</code></td><td>Screenshots used as evidence in this report</td></tr>
+  </table>
+  <h3>Contents of the research report</h3>
+  <ol style="columns:2;line-height:1.7"><li>Introduction</li><li>Feedback on Part 2 and how it was addressed</li><li>Prototype updates made for the POE</li><li>Usability goals</li><li>Desirable aspects of user experience</li><li>Design principles</li><li>Types of interaction</li><li>Social interactions</li><li>Emotional interaction</li><li>WCAG 2.0</li><li>Prototype overview</li><li>Final remarks</li><li>References</li></ol>
+</section>
+
+<h2>1. Introduction</h2>
+<p>StudySync is a peer-to-peer website where university students form study groups, share resources and work on coursework together without the distractions of general social media. Part 1 analysed the users' needs and set out the design requirements. Part 2 turned those requirements into a working, coded prototype (HTML, CSS and JavaScript, no frameworks). This Portfolio of Evidence (POE) is the final version: it records the feedback received on Part 2, describes how the prototype was improved in response, and uses screenshots of the updated prototype to show how each HCI concept was implemented.</p>
+<p>The prototype covers the four functional areas from Part 1: <b>study group management</b> (search, Quick Join, create, group workspace), <b>real-time collaboration</b> (chat, shared whiteboard, discussion board and, new in this version, shared notes), a <b>resource repository</b> (browse, filter, rate, report, upload) and <b>progress monitoring</b> (weekly goal, deadlines and, new in this version, a focus timer). It is a front-end prototype: data is simulated in the browser, while all interface behaviours (validation, feedback, undo, confirmations, keyboard support and saved preferences) work.</p>
+
+<h2>2. Feedback received on Part 2 and how it was addressed</h2>
+<p>The Part 2 feedback was positive about every assessed area. Because no part of the design was criticised, the POE work focused on <i>strengthening</i> the areas the marker highlighted rather than correcting them, and on the one negative point – the late submission. The table links each feedback point to the action taken.</p>
+<table>
+  <tr><th style="width:42%">Feedback on Part 2</th><th>Action taken in the POE</th></tr>
+  <tr><td>Good translation of the Part 1 research into a working prototype that addresses the identified user needs.</td><td>The same needs were extended to a gap noted in Part 2: document co-editing was only described, not shown. A <b>Shared notes</b> tab with presence (“Sipho D. is typing…”) and autosave now demonstrates it (Figure 17).</td></tr>
+  <tr><td>Usability goals: easy to understand, navigate and interact with.</td><td>Learnability was strengthened with a dismissible <b>“New here? Three steps to get going”</b> panel on the dashboard (Figure 1), and the A− / A+ buttons now disable at their limits so users cannot press a control that does nothing.</td></tr>
+  <tr><td>Good application of HCI principles, particularly consistency, visibility, feedback and simplicity.</td><td>Feedback was added to controls that were previously silent (text size and contrast now confirm the change in a toast), and accessibility settings are now <b>remembered on every page</b> (Figure 3) – a consistency fix, because before, the settings reset when the user changed page.</td></tr>
+  <tr><td>Desirable UX: satisfaction, confidence and ease of completing tasks.</td><td>The <b>focus timer</b> (Figures 5–6) helps students complete the main task the site exists for – studying – and passes the finished session to the weekly goal so it can be logged in one click.</td></tr>
+  <tr><td>Interaction types appropriately demonstrated through interface features and user actions.</td><td>The timer adds the <i>time</i> dimension (a live count-down with progress bar and pause), and shared notes add another <i>behaviour</i> example (live co-editing).</td></tr>
+  <tr><td>Social and emotional interactions make the experience more engaging.</td><td><b>Emoji reactions</b> on chat messages (👍 Agree, 💡 Helpful, 🙏 Thanks) give a light-weight way to support peers (Figure 16); the timer uses calm, encouraging messages and suggests a break after each session.</td></tr>
+  <tr><td>Screenshots provide useful evidence.</td><td>All screenshots were retaken from the updated prototype, and seven new ones were added. New features are marked <span class="new">NEW</span> in this report.</td></tr>
+  <tr><td>The report improved from Part 1 and shows the previous feedback was considered.</td><td>This section continues that practice. The WCAG section now also gives <b>measured</b> contrast ratios instead of a general claim (section 10).</td></tr>
+  <tr><td>Submission was extremely late and incurred a penalty.</td><td>The POE was planned against the due date with time set aside for screenshots and proofreading, and is submitted on time.</td></tr>
+</table>
+
+<h2>3. Prototype updates made for the POE</h2>
+<table>
+  <tr><th style="width:24%">Update</th><th style="width:22%">Page</th><th>Reason (HCI concept)</th></tr>
+  <tr><td>Getting-started panel</td><td>Dashboard</td><td>Learnability and recognition rather than recall; dismissed once with “Got it” and remembered.</td></tr>
+  <tr><td>Focus timer (25 / 50 min)</td><td>Dashboard</td><td>Utility for the core study task; time dimension; emotional support; timing control (pause and reset).</td></tr>
+  <tr><td>Shared notes with presence and autosave</td><td>Group workspace</td><td>Real-time collaboration from the Part 1 requirements; visibility of system status (“Saving…”, “✓ All changes saved”).</td></tr>
+  <tr><td>Chat reactions</td><td>Group workspace</td><td>Social interaction and positive emotion with very little effort.</td></tr>
+  <tr><td>Accessibility settings remembered</td><td>All pages</td><td>Consistency and WCAG 1.4.4; disabled A− / A+ at limits (error prevention).</td></tr>
+  <tr><td>Undo toast stays 12 s and pauses on hover/focus</td><td>All pages</td><td>WCAG 2.2.1 Timing adjustable; user control and freedom.</td></tr>
+  <tr><td>Notifications panel fitted to phone screens</td><td>All pages (mobile)</td><td>Testing showed the panel ran off the left edge at 390 px wide; it now spans the screen width (Figure 15c).</td></tr>
+  <tr><td>Darker focus outline (#c2410c)</td><td>All pages</td><td>The old orange outline measured only 2.15:1 against white; the new one is clearly visible (WCAG 2.4.7).</td></tr>
+</table>
+<div class="pair">
+  <figure><img src="../screens/01-dashboard.png" alt="Dashboard with getting-started panel and focus timer"><figcaption>Figure 1 <span class="new">NEW</span> – Dashboard with the getting-started panel and focus timer.</figcaption></figure>
+  <figure><img src="../screens/26-onboarding-dismissed.png" alt="Dashboard after dismissing the tips"><figcaption>Figure 2 <span class="new">NEW</span> – After “Got it”, the panel is hidden for good and a toast confirms it.</figcaption></figure>
+</div>
+
+<h2>4. Usability goals</h2>
+<h3>4.1 Effectiveness</h3>
+<p>Users can complete core tasks accurately: joining a group, uploading a resource and logging study hours. Forms use clear labels, hints and inline error messages, and results are confirmed on screen. A user who enters an impossible value (99 hours) is told exactly what is allowed instead of the form failing silently (Figure 4).</p>
+<div class="pair">
+  <figure><img src="../screens/25-settings-remembered.png" alt="Study groups page with larger text and high contrast carried over"><figcaption>Figure 3 <span class="new">NEW</span> – Larger text and high contrast chosen on the dashboard are kept on the Study Groups page.</figcaption></figure>
+  <figure><img src="../screens/03-dashboard-validation.png" alt="Inline validation message"><figcaption>Figure 4 – Inline validation for an invalid number of hours; the Log button stays disabled.</figcaption></figure>
+</div>
+<h3>4.2 Efficiency</h3>
+<p>“Quick Join” on the dashboard and on every group card joins a group in one click, with immediate feedback (Figure 11). The dashboard lists recently visited groups so a workspace is one click away. The new focus timer removes a step from goal tracking: when a session ends, the session length is already entered in the “Log a study session” field, so the user only presses <i>Log hours</i> (Figure 6).</p>
+<div class="pair">
+  <figure><img src="../screens/21-timer-running.png" alt="Focus timer counting down"><figcaption>Figure 5 <span class="new">NEW</span> – Focus timer running: live count-down, progress bar, Pause and Reset.</figcaption></figure>
+  <figure><img src="../screens/22-timer-complete.png" alt="Focus session complete"><figcaption>Figure 6 <span class="new">NEW</span> – Session complete: a break reminder, and the time is pre-filled for logging.</figcaption></figure>
+</div>
+<h3>4.3 Safety</h3>
+<p>Destructive actions (deleting a post, clearing the whiteboard) open a confirmation dialog that names the consequence. After a post is deleted, a toast offers <i>Undo</i>. In the POE version, this toast stays for 12 seconds and does not disappear while the pointer or keyboard focus is on it, so slower users can still recover.</p>
+<div class="pair">
+  <figure><img src="../screens/10-confirm-delete.png" alt="Delete confirmation"><figcaption>Figure 7 – Confirmation before deleting a post.</figcaption></figure>
+  <figure><img src="../screens/11-undo-toast.png" alt="Undo toast"><figcaption>Figure 8 – Non-punitive recovery: “Post deleted. Undo”.</figcaption></figure>
+</div>
+<h3>4.4 Utility</h3>
+<p>Every feature in the plan has a counterpart: workspace (chat, whiteboard, discussion, shared notes, calendar, members), resource library with upload, and personal progress tracking with a focus timer. Nothing was added that students do not need for collaborative study.</p>
+<h3>4.5 Learnability</h3>
+<p>The layout follows familiar conventions: top navigation, a dashboard, a primary “＋ Create” button, cards and tabs. First-time users get a three-step guide that links directly to each step (Figure 1). Icon buttons show tooltips on hover and focus, and form hints explain what to enter (Figure 9).</p>
+
+<h2>5. Desirable aspects of user experience</h2>
+<table>
+  <tr><th style="width:24%">Aspect</th><th>How it was implemented</th></tr>
+  <tr><td>Interface simplicity</td><td>Card-based pages with one primary action each, generous white space and four main navigation items. The getting-started panel can be removed once it is no longer needed.</td></tr>
+  <tr><td>Navigational usability</td><td>A consistent header with the current page highlighted (<code>aria-current</code>), breadcrumbs on inner pages and a “Back to groups” link.</td></tr>
+  <tr><td>Content readability</td><td>16 px base text, 1.6 line height, short lists and dark text with measured contrast of 13.7:1 on the page background. A+ enlarges text to 140% and the choice is kept on every page.</td></tr>
+  <tr><td>Interactive feedback</td><td>Hover, active and focus states; spinner while joining; upload progress bar; toasts after actions; live validation; autosave status in shared notes; live timer.</td></tr>
+  <tr><td>Personalisation</td><td>Module selection on the profile tailors the dashboard and library; text size, contrast and dismissed tips are remembered.</td></tr>
+  <tr><td>Aesthetic elements</td><td>A calm blue and teal palette, one typeface, rounded cards and a small consistent set of icons.</td></tr>
+</table>
+<div class="pair">
+  <figure><img src="../screens/07-create-dialog.png" alt="Create group dialog"><figcaption>Figure 9 – Create dialog: labels, a hint, an inline error and a disabled submit button until the input is valid.</figcaption></figure>
+  <figure><img src="../screens/16-profile.png" alt="Profile page"><figcaption>Figure 10 – Profile: module selection drives personalisation; reputation shows contribution.</figcaption></figure>
+</div>
+
+<h2>6. Design principles</h2>
+<table>
+  <tr><th style="width:24%">Principle</th><th>Implementation in the prototype</th></tr>
+  <tr><td>Visibility of system status</td><td>Spinner on “Joining…”, upload progress with percentage, toasts after every action, “Saving… / ✓ All changes saved” in shared notes, and the timer count-down also shown in the browser tab title.</td></tr>
+  <tr><td>Match with the real world</td><td>Student language (“Study Group”, “Quick Join”, “Past paper”); calendar, whiteboard and timer imitate real study tools.</td></tr>
+  <tr><td>User control and freedom</td><td>Cancel on all dialogs, Undo after deleting, Escape closes dialogs and menus, Pause/Reset on the timer, and dismissible tips.</td></tr>
+  <tr><td>Consistency and standards</td><td>Blue is always the primary action and red the destructive one; the trash icon always means delete; accessibility settings now behave the same on every page.</td></tr>
+  <tr><td>Error prevention</td><td>Submit buttons stay disabled until input is valid; confirmations before destructive actions; PDF/Word only for uploads; A− / A+ disable at their limits.</td></tr>
+  <tr><td>Recognition rather than recall</td><td>Recently visited groups, module suggestions while typing, module chips always visible, and the getting-started checklist.</td></tr>
+  <tr><td>Aesthetic and minimalist design</td><td>Only task-relevant content on each screen; secondary actions use quieter outline buttons.</td></tr>
+</table>
+<div class="pair">
+  <figure><img src="../screens/06-quick-join.png" alt="Quick join feedback"><figcaption>Figure 11 – Status feedback after Quick Join.</figcaption></figure>
+  <figure><img src="../screens/14-upload-progress.png" alt="Upload progress"><figcaption>Figure 12 – Upload progress bar and live status text.</figcaption></figure>
+</div>
+
+<h2>7. Types of interaction</h2>
+<ul>
+  <li><b>Words</b> – Action-oriented labels such as “Create Study Group”, “Share a resource”, “Log hours”, “Start” and “Send report” instead of generic “Submit”.</li>
+  <li><b>Visual representations</b> – Recognisable icons for chat, whiteboard, discussion, notes and notifications; colour-coded chips (blue modules, green positive, amber deadlines); avatars show who is editing the notes.</li>
+  <li><b>Physical objects and space</b> – A responsive grid (three columns on desktop, one on mobile) with a collapsing menu (Figure 15); touch-sized controls of at least 42 px.</li>
+  <li><b>Time</b> – The focus timer counts down live and fills a progress bar; toasts appear and leave on their own; the notification badge pulses briefly. All motion is switched off for users who prefer reduced motion.</li>
+  <li><b>Behaviour</b> – Typing a module code shows matching modules and filters groups instantly (Figure 13); whiteboard drawing follows the pointer (Figure 14); shared notes update when another member types (Figure 17).</li>
+</ul>
+<div class="pair">
+  <figure><img src="../screens/05-groups-search.png" alt="Search suggestions"><figcaption>Figure 13 – Search suggestions and live filtering by module code.</figcaption></figure>
+  <figure><img src="../screens/09-whiteboard.png" alt="Whiteboard"><figcaption>Figure 14 – Interactive shared whiteboard with pen colours.</figcaption></figure>
+</div>
+<div class="pair three">
+  <figure><img src="../screens/18-mobile.png" alt="Mobile layout"><figcaption>Figure 15a – Mobile layout.</figcaption></figure>
+  <figure><img src="../screens/19-mobile-menu.png" alt="Mobile menu"><figcaption>Figure 15b – Mobile menu.</figcaption></figure>
+  <figure><img src="../screens/27-mobile-notifications.png" alt="Notifications panel on mobile"><figcaption>Figure 15c – Notifications panel.</figcaption></figure>
+</div>
+
+<h2>8. Social interactions</h2>
+<table>
+  <tr><th style="width:24%">Interaction type</th><th>Implementation</th></tr>
+  <tr><td>Student–student</td><td>Group chat with emoji reactions, a shared whiteboard, a discussion board, <b>shared notes edited together in real time</b>, and a member list with “Add friend”.</td></tr>
+  <tr><td>Student–content</td><td>Download, five-star rating, filtering by type, reporting and uploading of resources (Figures 12, 18).</td></tr>
+  <tr><td>Awareness of others</td><td>“4 online now”, avatars of the people editing the notes, “Sipho D. is typing…”, and a notifications panel that keeps users in touch with their groups.</td></tr>
+  <tr><td>Community moderation</td><td>“Report” on posts and resources opens a dialog with reasons and confirms that a moderator will review it. Reputation points and a “Helpful Contributor” label reward quality contributions.</td></tr>
+</table>
+<div class="pair">
+  <figure><img src="../screens/24-chat-reactions.png" alt="Chat with reactions"><figcaption>Figure 16 <span class="new">NEW</span> – Chat reactions: a quick way to agree with or thank a classmate.</figcaption></figure>
+  <figure><img src="../screens/23-shared-notes.png" alt="Shared notes"><figcaption>Figure 17 <span class="new">NEW</span> – Shared notes: who is editing, autosave status, and a classmate's live addition.</figcaption></figure>
+</div>
+<div class="pair">
+  <figure><img src="../screens/13-resource-filter-rating.png" alt="Filter and rating"><figcaption>Figure 18 – Filtering by “Past paper” and rating a resource.</figcaption></figure>
+  <figure><img src="../screens/15-upload-done.png" alt="Upload complete"><figcaption>Figure 19 – Successful upload with a reputation-points reward.</figcaption></figure>
+</div>
+
+<h2>9. Emotional interaction</h2>
+<p>Students are often stressed about deadlines and exams, so StudySync is designed to feel supportive rather than demanding. These choices draw on research linking emotional elements of a user interface to how users perceive and engage with it (Mori, Paternò and Furci, 2015; Owa, Suzuki and Yang, 2025).</p>
+<ul>
+  <li><b>Warm, personal greeting</b> – “Good afternoon, Thandi!” with a study-streak message that recognises effort (Figure 1).</li>
+  <li><b>Positive reinforcement</b> – “Welcome to … 🎉” after joining; “Every session counts – keep it up” after logging hours (Figure 20); a celebration when the weekly goal is reached.</li>
+  <li><b>Calm focus and wellbeing</b> <span class="new">NEW</span> – The timer opens with “Ready when you are. Phones down, notes out.”, encourages the user during the session, and ends with “Take a 5-minute break – stretch, drink water” (Figure 6), discouraging stressful cramming.</li>
+  <li><b>Reduced anxiety</b> – Deadlines use calm amber chips with days left, not alarming red; errors are phrased kindly and never blame the user.</li>
+  <li><b>Belonging and recognition</b> – Reputation points, a “Helpful Contributor” badge, and reactions such as 💡 Helpful and 🙏 Thanks that let peers show appreciation (Figure 16).</li>
+</ul>
+<figure class="single"><img src="../screens/02-dashboard-logged.png" alt="Encouraging feedback after logging"><figcaption>Figure 20 – Encouraging feedback after logging a study session; the progress bar updates immediately.</figcaption></figure>
+
+<h2>10. Web Content Accessibility Guidelines (WCAG) 2.0</h2>
+<p>The prototype was built to meet WCAG 2.0 Level AA (Caldwell <i>et al.</i>, 2008) wherever it applies to its content. The table lists the criteria addressed under the four WCAG principles.</p>
+<table>
+  <tr><th style="width:14%">Principle</th><th style="width:25%">Criterion</th><th>Implementation</th></tr>
+  <tr><td rowspan="3">Perceivable</td><td>1.1.1 Non-text content</td><td>Decorative icons are hidden from screen readers; the whiteboard and calendar have text alternatives; icon and reaction buttons have accessible names (e.g. “React Helpful, 1”).</td></tr>
+  <tr><td>1.3.1 Info and relationships</td><td>Semantic landmarks, correct heading order, a <code>label</code> for every field (including the shared-notes area), and tab, list, timer and progressbar roles.</td></tr>
+  <tr><td>1.4.3 Contrast (minimum), 1.4.4 Resize text</td><td>Contrast was measured with the WCAG formula (see below): every text colour pair is at least 5.47:1, above the 4.5:1 minimum. A+ resizes text to 140% and the setting persists across pages; high-contrast mode is also remembered (Figures 3, 21).</td></tr>
+  <tr><td rowspan="4">Operable</td><td>2.1.1 Keyboard</td><td>Every control works by keyboard: arrow keys on tabs and search suggestions, Enter to choose, Escape to close; timer, reactions and notes are native buttons and fields.</td></tr>
+  <tr><td>2.2.1 Timing adjustable <span class="new">NEW</span></td><td>The focus timer can be paused and reset. Toasts with an action (Undo) stay 12 seconds and pause while hovered or focused.</td></tr>
+  <tr><td>2.4.1 Bypass blocks, 2.4.7 Focus visible</td><td>A “Skip to main content” link appears on the first Tab (Figure 22); a 3 px dark-orange focus outline (#c2410c, 5.2:1 on white) marks every focusable element.</td></tr>
+  <tr><td>2.4.2 Page titled, 2.4.4 Link purpose</td><td>Each page has a unique title (the timer adds the remaining time to it); links have meaningful text.</td></tr>
+  <tr><td rowspan="2">Understandable</td><td>3.1.1 Language; 3.2.3/3.2.4 Consistency</td><td><code>lang="en"</code> on every page; header, navigation order, component styles and accessibility settings are identical on all pages.</td></tr>
+  <tr><td>3.3.1–3.3.3 Input assistance</td><td>Required fields are marked; errors appear as text next to the field (<code>role="alert"</code>) with a suggestion; hints explain the format.</td></tr>
+  <tr><td>Robust</td><td>4.1.2 Name, role, value</td><td>Custom widgets expose ARIA states (<code>aria-expanded</code>, <code>aria-pressed</code>, <code>aria-selected</code>, <code>aria-current</code>) and live regions (<code>role="status"</code>) for toasts, chat, autosave and result counts.</td></tr>
+</table>
+<p><b>Measured contrast ratios</b> (WCAG 2.0 relative-luminance formula, AA requires 4.5:1 for normal text):</p>
+<table>
+  <tr><th>Text / background</th><th>Ratio</th><th>Text / background</th><th>Ratio</th></tr>
+  <tr><td>Body text #1f2937 on page #f4f7fb</td><td>13.66:1</td><td>Error text #b91c1c on white</td><td>6.47:1</td></tr>
+  <tr><td>Secondary text #4b5563 on white</td><td>7.56:1</td><td>Deadline chip #92400e on #fef3c7</td><td>6.37:1</td></tr>
+  <tr><td>Links #1d4ed8 on white / white on buttons</td><td>6.70:1</td><td>Positive chip #0b524c on #dcf5f1</td><td>7.90:1</td></tr>
+  <tr><td>Success toast, white on #065f46</td><td>7.68:1</td><td>Autosave status #0f766e on white</td><td>5.47:1</td></tr>
+</table>
+<div class="pair">
+  <figure><img src="../screens/17-accessibility.png" alt="Accessibility mode"><figcaption>Figure 21 – Larger text and high-contrast mode, confirmed with a toast.</figcaption></figure>
+  <figure><img src="../screens/20-skip-link-focus.png" alt="Skip link"><figcaption>Figure 22 – “Skip to main content” on first Tab, with the new darker focus outline.</figcaption></figure>
+</div>
+<p class="note"><b>Limitations:</b> the prototype was checked by manual keyboard testing, measured contrast ratios and an automated run of every interaction in Chrome (no script errors). It has not yet been audited with a screen reader or tested with students with disabilities; both are recommended before release.</p>
+
+<h2>11. Prototype overview and how to run it</h2>
+<table>
+  <tr><th style="width:28%">Page</th><th>Purpose and key features</th></tr>
+  <tr><td><code>index.html</code> – Dashboard</td><td>Greeting and streak, getting-started panel, Quick Join, stats, recent groups, deadlines, focus timer, weekly goal with hours log, modules.</td></tr>
+  <tr><td><code>groups.html</code> – Study Groups</td><td>Search with suggestions, group cards with Quick Join, create-group dialog with validation.</td></tr>
+  <tr><td><code>group.html</code> – Workspace</td><td>Chat with reactions, whiteboard, discussion with delete/undo and report, shared notes, calendar, members.</td></tr>
+  <tr><td><code>resources.html</code> – Library</td><td>Type filter, ratings, download, report, upload with progress and reputation reward.</td></tr>
+  <tr><td><code>profile.html</code> – Profile</td><td>Academic interests, module selection, reputation and study friends.</td></tr>
+</table>
+<p>To run the prototype, open <code>index.html</code> in any modern browser; no installation or server is needed. The folder <code>StudySync</code> holds the five pages plus <code>assets/styles.css</code> and <code>assets/app.js</code>.</p>
+
+<h2>12. Final remarks</h2>
+<p>The Part 2 feedback confirmed that the prototype met its usability, UX, design-principle, interaction, social and emotional goals. For the POE, those strengths were deepened rather than redesigned: a focus timer supports the core study task, shared notes complete the collaboration requirement, reactions and onboarding make the experience friendlier and easier to learn, and accessibility moved from a general claim to measured, persistent behaviour. The most valuable next steps are usability testing with real students to measure task success and satisfaction, a screen-reader audit, and a back end so that chat, whiteboard and notes become truly real-time.</p>
+
+<h2>13. References</h2>
+<div class="refs">
+<p>Calongne, C. M. (2001) ‘Designing for web site usability’, <i>Journal of Computing Sciences in Colleges</i>, 16(3), pp. 135–144.</p>
+<p>Caldwell, B., Cooper, M., Guarino Reid, L. and Vanderheiden, G. (2008) <i>Web Content Accessibility Guidelines (WCAG) 2.0</i>. W3C Recommendation. World Wide Web Consortium.</p>
+<p>Guarino Reid, L. and Snow-Weaver, A. (2009) ‘WCAG 2.0 for Designers: Beyond Screen Readers and Captions’, in <i>Proceedings of the 5th International Conference on Universal Access in Human-Computer Interaction</i>. Berlin: Springer, pp. 674–682.</p>
+<p>Mori, G., Paternò, F. and Furci, F. (2015) ‘Design Criteria for Stimulating Emotions in Web Applications’, in <i>Human-Computer Interaction – INTERACT 2015</i>. Cham: Springer, pp. 165–182.</p>
+<p>Owa, S., Suzuki, R. and Yang, W. (2025) ‘The Influence of Emotional Elements on UI Cognition Through Interaction’, in <i>Design, User Experience, and Usability</i>. Cham: Springer.</p>
+<p>Shimodaira, H. (n.d.) <i>HCI Lecture 13: Special Issues III: Websites</i>. University of Edinburgh.</p>
+<p>Sonowal, G. (2024) ‘Interaction Design’, in <i>User Interface and User Experience</i>. Boca Raton: CRC Press.</p>
+<p>Study on Graphic Design Techniques for UI Design Principles related to Usability (2015) <i>Journal of the Korea Contents Association</i>, 15(8), pp. 106–116.</p>
+<p>Factors Influencing User Intentions on Interactive Websites: Insights From the Technology Acceptance Model (2024) <i>IEEE Access</i>, 12, pp. 122735–122756.</p>
+<p>Enhancing Access to eLearning for People with Intellectual Disability: Integrating Usability with Learning (2017) in <i>Universal Access in Human-Computer Interaction</i>. Cham: Springer, pp. 23–38.</p>
+</div>
+</body>
+</html>
