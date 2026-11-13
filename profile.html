@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Profile – StudySync</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="StudySync home"><span class="brand-mark" aria-hidden="true">S</span> StudySync</a>
+    <button class="icon-btn menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Menu">☰</button>
+    <nav class="main-nav" id="main-nav" aria-label="Main"><ul><li><a href="index.html"><span aria-hidden="true">🏠</span> Dashboard</a></li><li><a href="groups.html"><span aria-hidden="true">👥</span> Study Groups</a></li><li><a href="resources.html"><span aria-hidden="true">📚</span> Resources</a></li><li><a href="profile.html" aria-current="page"><span aria-hidden="true">👤</span> Profile</a></li></ul></nav>
+    <div class="header-tools">
+      <div class="a11y-bar" role="group" aria-label="Accessibility options">
+        <button type="button" class="icon-btn" id="text-smaller" aria-label="Decrease text size" data-tip="Smaller text">A−</button>
+        <button type="button" class="icon-btn" id="text-bigger" aria-label="Increase text size" data-tip="Larger text">A+</button>
+        <button type="button" class="icon-btn" id="contrast" aria-pressed="false" aria-label="High contrast mode" data-tip="High contrast">◐</button>
+      </div>
+      <div class="tool-wrap">
+        <button type="button" class="icon-btn" id="bell" aria-expanded="false" aria-controls="notif-pop" aria-label="Notifications, 3 new" data-tip="Notifications">🔔<span class="badge-dot" aria-hidden="true">3</span></button>
+        <div class="popover" id="notif-pop" hidden>
+          <h2>Notifications</h2>
+          <ul>
+            <li><b>Lebo K.</b> replied in <a href="group.html">Linear Algebra Crew</a></li>
+            <li>Session tomorrow 16:00 – <b>COMS101 Exam Prep</b></li>
+            <li>Your resource <b>MATH201 Past Paper 2024</b> was rated 5★ 🎉</li>
+          </ul>
+        </div>
+      </div>
+      <a href="profile.html" class="avatar" aria-label="Your profile: Thandi Mokoena">TM</a>
+    </div>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li aria-current="page">Profile</li></ol></nav>
+
+<div class="page-head"><div><h1>My Profile</h1><p>Tell classmates a little about what you study.</p></div></div>
+<div class="layout-2">
+  <section class="card" aria-labelledby="me-h">
+    <div style="display:flex;gap:1rem;align-items:center;margin-bottom:1rem">
+      <span class="avatar" style="width:72px;height:72px;font-size:1.6rem" aria-hidden="true">TM</span>
+      <div><h2 id="me-h" style="margin:0">Thandi Mokoena</h2><p class="meta" style="margin:0">BCom Information Systems · Year 2</p></div>
+    </div>
+    <h3>Academic interests</h3>
+    <div class="chips" style="margin-bottom:1rem"><span class="chip">Databases</span><span class="chip">UX design</span><span class="chip">Data analytics</span></div>
+    <h3>My modules</h3>
+    <p class="meta">Select the modules you're taking. Your dashboard and library will update.</p>
+    <div class="chips" role="group" aria-label="My modules">
+      <button type="button" class="chip filter-chip" data-module-toggle="COMS101" aria-pressed="true">COMS101</button>
+      <button type="button" class="chip filter-chip" data-module-toggle="MATH201" aria-pressed="true">MATH201</button>
+      <button type="button" class="chip filter-chip" data-module-toggle="HCIN201" aria-pressed="true">HCIN201</button>
+      <button type="button" class="chip filter-chip" data-module-toggle="STAT200" aria-pressed="false">STAT200</button>
+      <button type="button" class="chip filter-chip" data-module-toggle="INFS202" aria-pressed="false">INFS202</button>
+    </div>
+  </section>
+  <aside class="grid">
+    <section class="card">
+      <h2>Community standing</h2>
+      <div class="reputation"><span aria-hidden="true">🏅</span> 145 reputation points · Helpful Contributor</div>
+      <p class="meta" style="margin-top:.6rem">You've shared 6 resources that helped 82 students. Thank you for lifting others up! 💙</p>
+    </section>
+    <section class="card">
+      <h2>Study friends</h2>
+      <ul class="list">
+        <li><span style="display:flex;gap:.6rem;align-items:center"><span class="avatar sm c2" aria-hidden="true">LK</span>Lebo K.</span><span class="chip green">Friends</span></li>
+        <li><span style="display:flex;gap:.6rem;align-items:center"><span class="avatar sm c3" aria-hidden="true">SD</span>Sipho D.</span><button type="button" class="btn small ghost" data-friend="Sipho D." aria-pressed="false">Add friend</button></li>
+      </ul>
+    </section>
+  </aside>
+</div>
+</main>
+<footer class="site-footer">StudySync prototype · Built for university students, by students · <a href="#main">Back to top</a></footer>
+<script src="assets/app.js"></script>
+</body>
+</html>

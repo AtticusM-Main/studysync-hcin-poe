@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>COMS101 Exam Prep – StudySync</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="StudySync home"><span class="brand-mark" aria-hidden="true">S</span> StudySync</a>
+    <button class="icon-btn menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Menu">☰</button>
+    <nav class="main-nav" id="main-nav" aria-label="Main"><ul><li><a href="index.html"><span aria-hidden="true">🏠</span> Dashboard</a></li><li><a href="groups.html" aria-current="page"><span aria-hidden="true">👥</span> Study Groups</a></li><li><a href="resources.html"><span aria-hidden="true">📚</span> Resources</a></li><li><a href="profile.html"><span aria-hidden="true">👤</span> Profile</a></li></ul></nav>
+    <div class="header-tools">
+      <div class="a11y-bar" role="group" aria-label="Accessibility options">
+        <button type="button" class="icon-btn" id="text-smaller" aria-label="Decrease text size" data-tip="Smaller text">A−</button>
+        <button type="button" class="icon-btn" id="text-bigger" aria-label="Increase text size" data-tip="Larger text">A+</button>
+        <button type="button" class="icon-btn" id="contrast" aria-pressed="false" aria-label="High contrast mode" data-tip="High contrast">◐</button>
+      </div>
+      <div class="tool-wrap">
+        <button type="button" class="icon-btn" id="bell" aria-expanded="false" aria-controls="notif-pop" aria-label="Notifications, 3 new" data-tip="Notifications">🔔<span class="badge-dot" aria-hidden="true">3</span></button>
+        <div class="popover" id="notif-pop" hidden>
+          <h2>Notifications</h2>
+          <ul>
+            <li><b>Lebo K.</b> replied in <a href="group.html">Linear Algebra Crew</a></li>
+            <li>Session tomorrow 16:00 – <b>COMS101 Exam Prep</b></li>
+            <li>Your resource <b>MATH201 Past Paper 2024</b> was rated 5★ 🎉</li>
+          </ul>
+        </div>
+      </div>
+      <a href="profile.html" class="avatar" aria-label="Your profile: Thandi Mokoena">TM</a>
+    </div>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li><a href="groups.html">Study Groups</a></li><li aria-current="page">COMS101 Exam Prep</li></ol></nav>
+
+<div class="page-head">
+  <div><h1>COMS101 Exam Prep</h1><p>Introduction to Computer Science · 14 members</p></div>
+  <div class="chips"><span class="chip green">● 4 online now</span><a class="btn secondary small" href="groups.html">← Back to groups</a></div>
+</div>
+
+<div class="layout-2">
+  <section class="card" aria-label="Group workspace">
+    <div class="tabs" role="tablist" aria-label="Group workspace sections">
+      <button role="tab" id="t-chat" aria-selected="true" aria-controls="p-chat">💬 Chat</button>
+      <button role="tab" id="t-board" aria-selected="false" tabindex="-1" aria-controls="p-board">✏️ Whiteboard</button>
+      <button role="tab" id="t-disc" aria-selected="false" tabindex="-1" aria-controls="p-disc">🗨 Discussion</button>
+      <button role="tab" id="t-notes" aria-selected="false" tabindex="-1" aria-controls="p-notes">📝 Shared notes</button>
+    </div>
+
+    <div role="tabpanel" id="p-chat" aria-labelledby="t-chat">
+      <div class="chat-log" id="chat-log" role="log" aria-live="polite" aria-label="Group chat messages">
+        <div class="msg"><span class="avatar sm c2" aria-hidden="true">LK</span><div class="bubble"><div class="who">Lebo K. · 14:02</div><div>Has anyone done the recursion tutorial yet?</div></div></div>
+        <div class="msg"><span class="avatar sm c3" aria-hidden="true">SD</span><div class="bubble"><div class="who">Sipho D. · 14:05</div><div>Yes! Base case first, then the recursive call. I can share my notes.</div></div></div>
+        <div class="msg me"><span class="avatar sm" aria-hidden="true">TM</span><div class="bubble"><div class="who">You · 14:08</div><div>That would be great, thanks Sipho 🙏</div></div></div>
+        <div class="msg"><span class="avatar sm c4" aria-hidden="true">AN</span><div class="bubble"><div class="who">Ayanda N. · 14:10</div><div>Let's go through Question 3 on the whiteboard at 16:00.</div></div></div>
+      </div>
+      <form id="chat-form" class="chat-form">
+        <label for="chat-input" class="sr-only">Type a message</label>
+        <input type="text" id="chat-input" placeholder="Type a message…" autocomplete="off">
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </div>
+
+    <div role="tabpanel" id="p-board" aria-labelledby="t-board" hidden>
+      <div class="wb-tools" role="group" aria-label="Whiteboard tools">
+        <span class="label" style="margin:0">Pen colour:</span>
+        <button type="button" class="swatch" data-colour="#1d4ed8" style="background:#1d4ed8" aria-pressed="true" aria-label="Blue pen"></button>
+        <button type="button" class="swatch" data-colour="#b91c1c" style="background:#b91c1c" aria-pressed="false" aria-label="Red pen"></button>
+        <button type="button" class="swatch" data-colour="#0f766e" style="background:#0f766e" aria-pressed="false" aria-label="Green pen"></button>
+        <button type="button" class="btn small danger" id="wb-clear" style="margin-left:auto">🗑 Clear board</button>
+      </div>
+      <canvas id="whiteboard" class="whiteboard" role="img" aria-label="Shared whiteboard. Current content: Question 3, show that the determinant of AB equals the product of determinants. Step 1 complete."></canvas>
+      <p class="hint">Draw with your mouse or finger. Text summary of the board is also posted in the Discussion tab.</p>
+    </div>
+
+    <div role="tabpanel" id="p-disc" aria-labelledby="t-disc" hidden>
+      <div class="post">
+        <div class="post-head"><span><b>Ayanda N.</b> <span class="meta">· Yesterday</span></span><span class="chip">Question</span></div>
+        <p>What's the difference between a compiler and an interpreter? I keep mixing them up.</p>
+        <div class="post-actions">
+          <button type="button" class="btn small ghost" data-report>⚑ Report</button>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post-head"><span><b>You</b> <span class="meta">· 2 days ago</span></span><span class="chip green">Tip</span></div>
+        <p>Past paper 2023 Section B is a great warm-up for Thursday's session.</p>
+        <div class="post-actions">
+          <button type="button" class="btn small ghost" data-delete-post><span aria-hidden="true">🗑</span> Delete</button>
+        </div>
+      </div>
+    </div>
+    <div role="tabpanel" id="p-notes" aria-labelledby="t-notes" hidden>
+      <div class="presence" aria-label="People editing these notes">
+        <span class="avatar sm" aria-hidden="true">TM</span><span class="avatar sm c3" aria-hidden="true">SD</span>
+        <span class="meta" id="presence-text" role="status">You and Sipho D. are editing</span>
+        <span class="save-state" id="save-state" role="status">✓ All changes saved</span>
+      </div>
+      <label for="notes-area" class="sr-only">Shared notes for COMS101 Exam Prep</label>
+      <textarea id="notes-area" class="notes-area" aria-describedby="notes-hint">COMS101 – Recursion summary
+• Every recursive function needs a BASE CASE that stops the calls.
+• Each call must move closer to the base case.
+</textarea>
+      <p class="hint" id="notes-hint">Everyone in the group can edit these notes. Changes save automatically and show who is typing.</p>
+    </div>
+  </section>
+
+  <aside class="grid" aria-label="Group details">
+    <section class="card">
+      <h2>Study sessions</h2>
+      <div class="calendar" role="img" aria-label="Calendar: sessions on Tuesday 14 and Thursday 16">
+        <div class="dow">M</div><div class="dow">T</div><div class="dow">W</div><div class="dow">T</div><div class="dow">F</div><div class="dow">S</div><div class="dow">S</div>
+        <div class="day muted">6</div><div class="day muted">7</div><div class="day">8</div><div class="day">9</div><div class="day">10</div><div class="day">11</div><div class="day">12</div>
+        <div class="day">13</div><div class="day event">14</div><div class="day">15</div><div class="day event">16</div><div class="day">17</div><div class="day">18</div><div class="day">19</div>
+      </div>
+      <p class="meta" style="margin-top:.6rem">Next: Tue 14, 16:00 – Question 3 walkthrough</p>
+      <button type="button" class="btn small secondary" onclick="toast('Reminder set for 15:45. You can change it any time.', {type:'success'})">🔔 Remind me</button>
+    </section>
+    <section class="card">
+      <h2>Members</h2>
+      <ul class="list">
+        <li><span style="display:flex;gap:.6rem;align-items:center"><span class="avatar sm c2" aria-hidden="true">LK</span>Lebo K.</span><button type="button" class="btn small ghost" data-friend="Lebo K." aria-pressed="false">Add friend</button></li>
+        <li><span style="display:flex;gap:.6rem;align-items:center"><span class="avatar sm c3" aria-hidden="true">SD</span>Sipho D.</span><button type="button" class="btn small ghost" data-friend="Sipho D." aria-pressed="false">Add friend</button></li>
+        <li><span style="display:flex;gap:.6rem;align-items:center"><span class="avatar sm c4" aria-hidden="true">AN</span>Ayanda N.</span><button type="button" class="btn small ghost" data-friend="Ayanda N." aria-pressed="false">Add friend</button></li>
+      </ul>
+    </section>
+  </aside>
+</div>
+
+<dialog id="report-dialog" aria-labelledby="rep-h">
+  <form method="dialog">
+    <h2 id="rep-h">Report this content</h2>
+    <div class="field">
+      <label for="rep-reason">What's the problem?</label>
+      <select id="rep-reason"><option>Inappropriate or disrespectful</option><option>Incorrect or misleading</option><option>Spam</option><option>Copyright concern</option></select>
+    </div>
+    <div class="form-actions"><button type="button" class="btn ghost" data-cancel>Cancel</button><button type="submit" class="btn">Send report</button></div>
+  </form>
+</dialog>
+</main>
+<footer class="site-footer">StudySync prototype · Built for university students, by students · <a href="#main">Back to top</a></footer>
+<script src="assets/app.js"></script>
+</body>
+</html>

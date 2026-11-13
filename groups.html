@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Study Groups – StudySync</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="StudySync home"><span class="brand-mark" aria-hidden="true">S</span> StudySync</a>
+    <button class="icon-btn menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Menu">☰</button>
+    <nav class="main-nav" id="main-nav" aria-label="Main"><ul><li><a href="index.html"><span aria-hidden="true">🏠</span> Dashboard</a></li><li><a href="groups.html" aria-current="page"><span aria-hidden="true">👥</span> Study Groups</a></li><li><a href="resources.html"><span aria-hidden="true">📚</span> Resources</a></li><li><a href="profile.html"><span aria-hidden="true">👤</span> Profile</a></li></ul></nav>
+    <div class="header-tools">
+      <div class="a11y-bar" role="group" aria-label="Accessibility options">
+        <button type="button" class="icon-btn" id="text-smaller" aria-label="Decrease text size" data-tip="Smaller text">A−</button>
+        <button type="button" class="icon-btn" id="text-bigger" aria-label="Increase text size" data-tip="Larger text">A+</button>
+        <button type="button" class="icon-btn" id="contrast" aria-pressed="false" aria-label="High contrast mode" data-tip="High contrast">◐</button>
+      </div>
+      <div class="tool-wrap">
+        <button type="button" class="icon-btn" id="bell" aria-expanded="false" aria-controls="notif-pop" aria-label="Notifications, 3 new" data-tip="Notifications">🔔<span class="badge-dot" aria-hidden="true">3</span></button>
+        <div class="popover" id="notif-pop" hidden>
+          <h2>Notifications</h2>
+          <ul>
+            <li><b>Lebo K.</b> replied in <a href="group.html">Linear Algebra Crew</a></li>
+            <li>Session tomorrow 16:00 – <b>COMS101 Exam Prep</b></li>
+            <li>Your resource <b>MATH201 Past Paper 2024</b> was rated 5★ 🎉</li>
+          </ul>
+        </div>
+      </div>
+      <a href="profile.html" class="avatar" aria-label="Your profile: Thandi Mokoena">TM</a>
+    </div>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li aria-current="page">Study Groups</li></ol></nav>
+
+<div class="page-head">
+  <div><h1>Study Groups</h1><p>Find a group for your module, or start your own.</p></div>
+  <button type="button" class="btn" id="open-create">＋ Create Study Group</button>
+</div>
+
+<section class="card" style="margin-bottom:1rem" aria-label="Search study groups">
+  <div class="field search-wrap" style="margin-bottom:0">
+    <label for="module-search">Search by module code or name</label>
+    <input type="search" id="module-search" role="combobox" aria-expanded="false" aria-controls="module-suggestions" aria-autocomplete="list" autocomplete="off" placeholder="Start typing, e.g. COMS" value="">
+    <ul class="suggestions" id="module-suggestions" role="listbox" hidden></ul>
+    <div class="hint">Suggestions appear as you type. Use ↑ ↓ and Enter to choose.</div>
+  </div>
+</section>
+
+<p id="result-count" class="meta" role="status" aria-live="polite">6 groups found</p>
+<div class="grid cols-3" id="group-grid">
+<article class="card group-card" data-module="COMS101" data-title="COMS101 Exam Prep">
+  <div class="row"><h3>COMS101 Exam Prep</h3><span class="chip green">14 members</span></div>
+  <div class="chips"><span class="chip">COMS101</span></div>
+  <p class="meta">Introduction to Computer Science · Tue & Thu · 16:00</p>
+  <div class="row">
+    <button type="button" class="btn small" data-join="COMS101 Exam Prep">⚡ Quick Join</button>
+    <a class="btn small secondary" href="group.html">Preview</a>
+  </div>
+</article>
+<article class="card group-card" data-module="MATH201" data-title="Linear Algebra Crew">
+  <div class="row"><h3>Linear Algebra Crew</h3><span class="chip green">9 members</span></div>
+  <div class="chips"><span class="chip">MATH201</span></div>
+  <p class="meta">Linear Algebra · Mon · 18:00</p>
+  <div class="row">
+    <button type="button" class="btn small" data-join="Linear Algebra Crew">⚡ Quick Join</button>
+    <a class="btn small secondary" href="group.html">Preview</a>
+  </div>
+</article>
+<article class="card group-card" data-module="HCIN201" data-title="HCI Prototype Squad">
+  <div class="row"><h3>HCI Prototype Squad</h3><span class="chip green">6 members</span></div>
+  <div class="chips"><span class="chip">HCIN201</span></div>
+  <p class="meta">Human-Computer Interaction · Wed · 15:30</p>
+  <div class="row">
+    <button type="button" class="btn small" data-join="HCI Prototype Squad">⚡ Quick Join</button>
+    <a class="btn small secondary" href="group.html">Preview</a>
+  </div>
+</article>
+<article class="card group-card" data-module="STAT200" data-title="Stats Survivors">
+  <div class="row"><h3>Stats Survivors</h3><span class="chip green">21 members</span></div>
+  <div class="chips"><span class="chip">STAT200</span></div>
+  <p class="meta">Statistics for Business · Fri · 12:00</p>
+  <div class="row">
+    <button type="button" class="btn small" data-join="Stats Survivors">⚡ Quick Join</button>
+    <a class="btn small secondary" href="group.html">Preview</a>
+  </div>
+</article>
+<article class="card group-card" data-module="INFS202" data-title="Info Systems Study Room">
+  <div class="row"><h3>Info Systems Study Room</h3><span class="chip green">11 members</span></div>
+  <div class="chips"><span class="chip">INFS202</span></div>
+  <p class="meta">Information Systems · Thu · 17:00</p>
+  <div class="row">
+    <button type="button" class="btn small" data-join="Info Systems Study Room">⚡ Quick Join</button>
+    <a class="btn small secondary" href="group.html">Preview</a>
+  </div>
+</article>
+<article class="card group-card" data-module="PHYS110" data-title="Physics Problem Solvers">
+  <div class="row"><h3>Physics Problem Solvers</h3><span class="chip green">8 members</span></div>
+  <div class="chips"><span class="chip">PHYS110</span></div>
+  <p class="meta">Physics for Engineers · Sat · 10:00</p>
+  <div class="row">
+    <button type="button" class="btn small" data-join="Physics Problem Solvers">⚡ Quick Join</button>
+    <a class="btn small secondary" href="group.html">Preview</a>
+  </div>
+</article></div>
+
+<dialog id="create-dialog" aria-labelledby="create-h">
+  <form method="dialog" novalidate>
+    <h2 id="create-h">Create a study group</h2>
+    <div class="field">
+      <label for="g-name">Group name <span aria-hidden="true">*</span></label>
+      <input type="text" id="g-name" required aria-describedby="g-name-err" placeholder="e.g. Databases Night Owls">
+      <div class="error-msg" id="g-name-err" role="alert"></div>
+    </div>
+    <div class="field">
+      <label for="g-module">Module <span aria-hidden="true">*</span></label>
+      <select id="g-module" required>
+        <option value="">Choose a module…</option>
+        <option>COMS101</option><option>MATH201</option><option>HCIN201</option><option>INFS202</option><option>STAT200</option>
+      </select>
+    </div>
+    <div class="hint" style="margin-bottom:1rem">The Create button unlocks once the required fields are complete.</div>
+    <div class="form-actions">
+      <button type="button" class="btn ghost" data-cancel>Cancel</button>
+      <button type="submit" class="btn" disabled>Create Study Group</button>
+    </div>
+  </form>
+</dialog>
+</main>
+<footer class="site-footer">StudySync prototype · Built for university students, by students · <a href="#main">Back to top</a></footer>
+<script src="assets/app.js"></script>
+</body>
+</html>

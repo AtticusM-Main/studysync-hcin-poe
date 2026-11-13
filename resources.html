@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resource Library – StudySync</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="StudySync home"><span class="brand-mark" aria-hidden="true">S</span> StudySync</a>
+    <button class="icon-btn menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Menu">☰</button>
+    <nav class="main-nav" id="main-nav" aria-label="Main"><ul><li><a href="index.html"><span aria-hidden="true">🏠</span> Dashboard</a></li><li><a href="groups.html"><span aria-hidden="true">👥</span> Study Groups</a></li><li><a href="resources.html" aria-current="page"><span aria-hidden="true">📚</span> Resources</a></li><li><a href="profile.html"><span aria-hidden="true">👤</span> Profile</a></li></ul></nav>
+    <div class="header-tools">
+      <div class="a11y-bar" role="group" aria-label="Accessibility options">
+        <button type="button" class="icon-btn" id="text-smaller" aria-label="Decrease text size" data-tip="Smaller text">A−</button>
+        <button type="button" class="icon-btn" id="text-bigger" aria-label="Increase text size" data-tip="Larger text">A+</button>
+        <button type="button" class="icon-btn" id="contrast" aria-pressed="false" aria-label="High contrast mode" data-tip="High contrast">◐</button>
+      </div>
+      <div class="tool-wrap">
+        <button type="button" class="icon-btn" id="bell" aria-expanded="false" aria-controls="notif-pop" aria-label="Notifications, 3 new" data-tip="Notifications">🔔<span class="badge-dot" aria-hidden="true">3</span></button>
+        <div class="popover" id="notif-pop" hidden>
+          <h2>Notifications</h2>
+          <ul>
+            <li><b>Lebo K.</b> replied in <a href="group.html">Linear Algebra Crew</a></li>
+            <li>Session tomorrow 16:00 – <b>COMS101 Exam Prep</b></li>
+            <li>Your resource <b>MATH201 Past Paper 2024</b> was rated 5★ 🎉</li>
+          </ul>
+        </div>
+      </div>
+      <a href="profile.html" class="avatar" aria-label="Your profile: Thandi Mokoena">TM</a>
+    </div>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li aria-current="page">Resources</li></ol></nav>
+
+<div class="page-head"><div><h1>Resource Library</h1><p>Showing resources for your modules: COMS101, MATH201, HCIN201</p></div></div>
+<div class="layout-2">
+  <section class="card" aria-labelledby="lib-h">
+    <h2 id="lib-h">Browse resources</h2>
+    <div class="chips" role="group" aria-label="Filter by type" data-filter-group style="margin-bottom:.8rem">
+      <button type="button" class="chip filter-chip" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" class="chip filter-chip" data-filter="Past paper" aria-pressed="false">Past papers</button>
+      <button type="button" class="chip filter-chip" data-filter="Summary" aria-pressed="false">Summaries</button>
+      <button type="button" class="chip filter-chip" data-filter="Notes" aria-pressed="false">Notes</button>
+    </div>
+    <p id="filter-status" class="sr-only" role="status" aria-live="polite"></p>
+    <ul class="list">
+<li data-type="Past paper">
+  <div style="flex:1">
+    <div class="item-title">MATH201 Past Paper 2024</div>
+    <div class="meta"><span class="chip">MATH201</span> Past paper · PDF · shared by Thandi M. · ⭐ 4.8</div>
+    <fieldset style="border:0;padding:0;margin:.3rem 0 0">
+      <legend class="sr-only">Rate MATH201 Past Paper 2024</legend>
+      <div class="stars">
+        <input type="radio" name="rate0" id="r0-5" value="5"><label for="r0-5" aria-label="5 stars">★</label><input type="radio" name="rate0" id="r0-4" value="4"><label for="r0-4" aria-label="4 stars">★</label><input type="radio" name="rate0" id="r0-3" value="3"><label for="r0-3" aria-label="3 stars">★</label><input type="radio" name="rate0" id="r0-2" value="2"><label for="r0-2" aria-label="2 stars">★</label><input type="radio" name="rate0" id="r0-1" value="1"><label for="r0-1" aria-label="1 star">★</label>
+      </div>
+    </fieldset>
+  </div>
+  <div style="display:flex;gap:.4rem;flex-wrap:wrap">
+    <button type="button" class="btn small" onclick="toast('Downloading MATH201 Past Paper 2024…')">⬇ Download</button>
+    <button type="button" class="btn small ghost" data-report>⚑ Report</button>
+  </div>
+</li>
+<li data-type="Summary">
+  <div style="flex:1">
+    <div class="item-title">COMS101 Recursion Summary</div>
+    <div class="meta"><span class="chip">COMS101</span> Summary · PDF · shared by Sipho D. · ⭐ 4.5</div>
+    <fieldset style="border:0;padding:0;margin:.3rem 0 0">
+      <legend class="sr-only">Rate COMS101 Recursion Summary</legend>
+      <div class="stars">
+        <input type="radio" name="rate1" id="r1-5" value="5"><label for="r1-5" aria-label="5 stars">★</label><input type="radio" name="rate1" id="r1-4" value="4"><label for="r1-4" aria-label="4 stars">★</label><input type="radio" name="rate1" id="r1-3" value="3"><label for="r1-3" aria-label="3 stars">★</label><input type="radio" name="rate1" id="r1-2" value="2"><label for="r1-2" aria-label="2 stars">★</label><input type="radio" name="rate1" id="r1-1" value="1"><label for="r1-1" aria-label="1 star">★</label>
+      </div>
+    </fieldset>
+  </div>
+  <div style="display:flex;gap:.4rem;flex-wrap:wrap">
+    <button type="button" class="btn small" onclick="toast('Downloading COMS101 Recursion Summary…')">⬇ Download</button>
+    <button type="button" class="btn small ghost" data-report>⚑ Report</button>
+  </div>
+</li>
+<li data-type="Notes">
+  <div style="flex:1">
+    <div class="item-title">HCI Heuristics Cheat Sheet</div>
+    <div class="meta"><span class="chip">HCIN201</span> Notes · DOCX · shared by Lebo K. · ⭐ 4.9</div>
+    <fieldset style="border:0;padding:0;margin:.3rem 0 0">
+      <legend class="sr-only">Rate HCI Heuristics Cheat Sheet</legend>
+      <div class="stars">
+        <input type="radio" name="rate2" id="r2-5" value="5"><label for="r2-5" aria-label="5 stars">★</label><input type="radio" name="rate2" id="r2-4" value="4"><label for="r2-4" aria-label="4 stars">★</label><input type="radio" name="rate2" id="r2-3" value="3"><label for="r2-3" aria-label="3 stars">★</label><input type="radio" name="rate2" id="r2-2" value="2"><label for="r2-2" aria-label="2 stars">★</label><input type="radio" name="rate2" id="r2-1" value="1"><label for="r2-1" aria-label="1 star">★</label>
+      </div>
+    </fieldset>
+  </div>
+  <div style="display:flex;gap:.4rem;flex-wrap:wrap">
+    <button type="button" class="btn small" onclick="toast('Downloading HCI Heuristics Cheat Sheet…')">⬇ Download</button>
+    <button type="button" class="btn small ghost" data-report>⚑ Report</button>
+  </div>
+</li>
+<li data-type="Summary">
+  <div style="flex:1">
+    <div class="item-title">STAT200 Formula Sheet</div>
+    <div class="meta"><span class="chip">STAT200</span> Summary · PDF · shared by Ayanda N. · ⭐ 4.2</div>
+    <fieldset style="border:0;padding:0;margin:.3rem 0 0">
+      <legend class="sr-only">Rate STAT200 Formula Sheet</legend>
+      <div class="stars">
+        <input type="radio" name="rate3" id="r3-5" value="5"><label for="r3-5" aria-label="5 stars">★</label><input type="radio" name="rate3" id="r3-4" value="4"><label for="r3-4" aria-label="4 stars">★</label><input type="radio" name="rate3" id="r3-3" value="3"><label for="r3-3" aria-label="3 stars">★</label><input type="radio" name="rate3" id="r3-2" value="2"><label for="r3-2" aria-label="2 stars">★</label><input type="radio" name="rate3" id="r3-1" value="1"><label for="r3-1" aria-label="1 star">★</label>
+      </div>
+    </fieldset>
+  </div>
+  <div style="display:flex;gap:.4rem;flex-wrap:wrap">
+    <button type="button" class="btn small" onclick="toast('Downloading STAT200 Formula Sheet…')">⬇ Download</button>
+    <button type="button" class="btn small ghost" data-report>⚑ Report</button>
+  </div>
+</li></ul>
+  </section>
+
+  <section class="card" aria-labelledby="up-h">
+    <h2 id="up-h">Share a resource</h2>
+    <form id="upload-form" novalidate>
+      <div class="field"><label for="u-title">Title <span aria-hidden="true">*</span></label><input type="text" id="u-title" placeholder="e.g. MATH201 Tutorial 4 Solutions"></div>
+      <div class="field"><label for="u-module">Module <span aria-hidden="true">*</span></label>
+        <select id="u-module"><option value="">Choose…</option><option>COMS101</option><option>MATH201</option><option>HCIN201</option></select></div>
+      <div class="field"><label for="u-file">File <span aria-hidden="true">*</span></label><input type="file" id="u-file" accept=".pdf,.doc,.docx"><div class="hint">PDF or Word, up to 10 MB.</div></div>
+      <div class="progress" id="upload-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Upload progress" hidden><span id="upload-bar" style="width:0"></span></div>
+      <p id="upload-status" class="ok-msg" role="status" aria-live="polite"></p>
+      <button class="btn" type="submit" disabled>Upload resource</button>
+    </form>
+    <div class="reputation" style="margin-top:1rem"><span aria-hidden="true">🏅</span> Earn reputation points for every high-quality resource you share.</div>
+  </section>
+</div>
+<dialog id="report-dialog" aria-labelledby="rep-h">
+  <form method="dialog">
+    <h2 id="rep-h">Report this content</h2>
+    <div class="field"><label for="rep-reason">What's the problem?</label>
+      <select id="rep-reason"><option>Inappropriate or disrespectful</option><option>Incorrect or misleading</option><option>Spam</option><option>Copyright concern</option></select></div>
+    <div class="form-actions"><button type="button" class="btn ghost" data-cancel>Cancel</button><button type="submit" class="btn">Send report</button></div>
+  </form>
+</dialog>
+</main>
+<footer class="site-footer">StudySync prototype · Built for university students, by students · <a href="#main">Back to top</a></footer>
+<script src="assets/app.js"></script>
+</body>
+</html>
